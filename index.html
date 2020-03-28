@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+</head>
+<body>
+    <h3>Contact Form</h3>
+    <form action="processform.php" method="post">
+        <p>
+            <label for="firstname">FirstName</label> <br>
+            <input type="text" name="firstname" placeholder="Enter Your First Name" required>
+        </p>
+        <p>
+            <label for="lastname">LastName</label> <br>
+            <input type="text" name="lastname" placeholder="Enter Your Last Name" required>
+        </p>
+        <p>
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+        </p>
+        <p>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" required>Female
+            <input type="radio" name="gender" required>Male
+        </p>
+        
+        <p>
+            <label for="department">Department</label><br>
+            <select name="department" >
+                <option >select department</option>
+                <option >HR</option>
+                <option >Marketing</option>
+                <option >Board</option>
+                <option >Kitchen</option>
+            </select>
+        </p>
+        <p>
+            <label for="message">Message</label><br>
+            <textarea name="message"  cols="15" rows="3">Type your comment here</textarea>
+        </p>
+        <p>
+            <input type="checkbox" name="terms" required>By checking this box you agree to our terms and conditions
+        </p>
+        <p>
+            <button type="submit" name="submit">Send message</button>
+        </p>
+        
+    </form>
+</body>
+</html>
